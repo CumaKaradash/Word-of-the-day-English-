@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quote-container">
+        <h1>Quote of the Day</h1>
+        <div id="quote-card" class="card">
+            <div id="quote-content">
+                <p id="quote" class="fade-in"></p>
+                <p id="author" class="fade-in"></p>
+                <div id="loading-spinner" class="hidden">Loading...</div>
+            </div>
+        </div>
+        <div id="controls">
+            <button id="new-quote-button" class="btn">Get New Quote</button>
+            <button id="favorite-quote-button" class="btn">Save to Favorites</button>
+            <button id="theme-toggle-button" class="btn">Toggle Theme</button>
+            <button id="speak-quote-button" class="btn">Speak Quote</button>
+            <button id="copy-quote-button" class="btn">Copy</button>
+        </div>
+        <div id="favorites-container">
+            <h2>Your Favorite Quotes</h2>
+            <ul id="favorites-list"></ul>
+        </div>
+    </div>
+    <div id="notification" class="hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>
